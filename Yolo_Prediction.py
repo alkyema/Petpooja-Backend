@@ -10,7 +10,7 @@ print(f"Using device: {device}")
 
 def detect(image_path):
     # Load YOLO model
-    model = YOLO(r"C:\Users\satwi\Downloads\HackJNUThon\models\M_Till_best.pt")  # Update with actual model path
+    model = YOLO("M_Till_best.pt")  # Update with actual model path
     
     # Run detection
     results = model(image_path, device=device)
